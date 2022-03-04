@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmo Pasteles</title>
+    <!-- CSS -->
+    <style>
+        header{
+            background-color: #fae1dd
+        }
+        body{
+            
+        }
+        footer{
+            background-color: #fae1dd
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="/"class="logo">
+            <img src="images/logo.png" alt="Logo Luna Pasteles" width="100" height="100">
+        </a>
+        <div>Luna Pasteles</div>
+        <div>Pastelillos fuera de este mundo</div>
+    </header>
+
+   <h1>Pedido de Pasteles</h1>
+
+   <!-- Sabores -->
+   <dt>Sabores disponibles:</dt>
+   <dd>Vainilla  = $150</dd>
+   <dd>Fresa = $150</dd>
+   <dd>Chocolate = $150</dd>
+   <dd>Mango = $170</dd>
+   <dd>Red velvet = $180</dd>
+
+   <!-- Adornos --> <br>
+   <dt>Adornos disponibles:</dt>
+   <dd>Una frase = $10</dd>
+   <dd>Dos frases = $15</dd>
+   <dd>Dibujo personalizado = $50</dd>
+   <dd>Betún mixto = $30</dd>
+
+
+   
+
+   <!-- Formulario de Pedido -->
+   <h2>Formulario de Pedido</h2>
+   <label for="nombreCliente">Nombre:</label><br>
+   <input type="text" name="nombreCliente" id="nombreCliente" value="">
+   <br><br>
+   <label for="telefonoCliente">Teléfono:</label>
+   <br>
+   <input type="tel" name="telefonoCliente" id="telefonoCliente" maxlength="10">
+   <br><br>
+   <label for="emailCliente">Correo electrónico:</label><br>
+   <input type="email" name="emailCliente" id="emailCliente">
+   <br><br>
+   <label for="DescripcionPastel">Característias adicionales:</label><br>
+   <input type="text" name="DescripcionPastel" id="DescripcionPastel" value="">
+
+   <br><br>  <!-- Checkbox sabores -->
+   <h4 label for="saboresCliente">¿Qué sabores desea?</h4 label>
+   <input type="checkbox" name="sabores1" id="sabores1" value="Vainilla">
+   <label for="sabores1">Vainilla</label><br>
+   <input type="checkbox" name="sabores2" id="sabores2" value="Fresa">
+   <label for="sabores2">Fresa</label><br>
+   <input type="checkbox" name="sabores3" id="sabores3" value="Chocolate">
+   <label for="sabores3">Chocolate</label><br>
+   <input type="checkbox" name="sabores4" id="sabores4" value="Mango">
+   <label for="sabores4">Mango</label><br>
+   <input type="checkbox" name="sabores5" id="sabores5" value="Red velvet">
+   <label for="sabores5">Red velvet</label><br>
+
+   <!-- Checkbox adornos -->
+   <h4 label for="saboresCliente">¿Qué adornos desea agregar?</h4 label>
+   <input type="checkbox" name="adornos1" id="adornos1" value="1 frase">
+   <label for="adornos1">1 frase</label><br>
+   <input type="checkbox" name="adornos2" id="adornos2" value="2 frases">
+   <label for="adornos2">2 frases</label><br>
+   <input type="checkbox" name="adornos3" id="adornos3" value="Dibujo personalizado">
+   <label for="adornos3">Dibujo personalizado</label><br>
+   <input type="checkbox" name="adornos4" id="adornos4" value="Betún mixto">
+   <label for="adornos4">Betún mixto</label><br>
+
+
+   <!-- Botones Formulario -->
+   <br><br>
+   <input type="reset" value="Limpiar formulario">
+   <input type="submit" value="Finalizar Pedido">
+
+   <!-- Pie de Página -->
+   <footer>
+         <!-- Información de Contacto -->
+       <h5>Información de Contacto:</h5>
+       <p>Avenidas las fuentes, Monterrey, Nuevo Leon</p>
+       <p>Tel: 811 555 1234</p>
+       <p>Horario: Lunes a Sábado de 8 am a 7 pm</p>
+   </footer>
+</body>
+
+</html>
