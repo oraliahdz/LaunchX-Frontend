@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination</title>
+
+    <!-- CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+        *{
+            font-family: Poppins;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-header{
+            color: white;
+            height: 130px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+
+        .brand-logo{
+            display: flex;
+            color: #3752cd;
+            font-size: 22px;
+            font-weight: bold;
+            align-items: center;
+            font-weight: 700;
+            margin-left: 1.5rem;
+            margin-right: auto;
+            padding: 0;
+        }
+
+        .main-nav ul{
+            display: flex;
+            color: #66738b;
+            font-size: 14px;
+            font-weight: 500;
+            list-style: none;
+
+        }
+
+        .main-nav a {
+            display: flex;
+            color: #66738b;
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 16px; 
+            text-decoration: none;
+        }
+
+
+        .button{
+            background-color: #3752cd;
+            color: white;
+            text-align: center;
+            height: 45px;
+            width: 110px;
+            align-items:center;
+            margin-right: 1.5rem;
+            margin-left: 1.0rem;
+            border-radius: .3rem;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .title{
+            display: flex;
+            color: #254070;
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        .subtitle{
+            display: flex;
+            color: #254070;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .h3{
+            display: flex;
+            color: #254070;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .main-text{
+            color: #66738b;
+            font-size: 13px; 
+            font-weight: 500;
+        }
+
+        p{
+            color: #66738b;
+            font-size: 12px;
+        }
+
+        h4{
+            color: #254070;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
+
+        
+        footer{
+            height: 250px;
+            background-color: #eef3ff;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-container{
+            display: flex;
+            justify-content:flex-end;
+            padding-top: 20px;
+        }
+
+        .footer-col-logo{
+            margin-right: auto;
+            padding: 0;
+            font-weight: 500;
+        }
+
+        .footer-text{
+            width: 155px;
+            flex-wrap: wrap;
+            margin-left: 1.5rem;
+            padding-top: 10px;
+        }
+
+        .footer-cols a, .footer-cols ul{
+            display: flex;
+            color: #66738b;
+            font-size: 14px;
+            font-weight: 500;
+            list-style: none;
+            text-decoration: none;
+            width: 150px;
+            flex-wrap: wrap;
+            margin:10px;
+        }
+
+        .footer-trademark{
+            display: flex;
+        }
+
+        .footer-terms{
+            display: flex;
+            padding-left: 50%;
+        }
+
+        .home-section1,.home-section3,.home-section4{
+            display: flex;
+            justify-content: space-between;
+            position:relative;
+            flex-grow: 1;
+            height: 700px;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .home-section2{
+            display: flex;
+            flex-grow: 1;
+            height: 550px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .Contenedor-Izquierda{
+            margin-left: 5.5rem;
+            width: 50%;
+            align-items: center;
+        }
+
+        .Contenedor-Izquierda img {
+            width: 100%;
+        }
+
+        .Contenedor-Derecha{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+
+        .Imagen-Izquierda{
+            display: flex;
+            justify-items: flex-start;
+            margin-left: 0;
+        }
+
+        .S01-text01{
+            width: 300px;
+            padding-top: 50px;
+        }
+
+        .S02-textoIzquierda{
+            width: 420px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            padding-top: 50px;
+        }
+
+        .S03-textoDerecha{
+            width: 420px;
+            padding-left: 80px;
+        }
+
+        .S01-text02{
+            display: flex;
+            justify-content: space-around;
+            width: 300px;
+            color: #254070;
+            font-size: 15px;
+            font-weight: bold;
+            padding-top: 4.5rem;
+            align-items: center;
+            padding-left: -05px;
+        }
+
+        .S01-text02 img{
+            height: 20px;
+            width: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f5ff;
+
+        } 
+
+
+
+        .formulario{
+            display: flex;       
+            width: 800px;
+            height: 100px;
+            background-color: rgb(250, 250, 250);
+            opacity: 0.8;
+            align-items: center;
+            position:absolute;
+            top: 500px;
+            left: 150px;
+            border-radius: .2rem;
+        }
+
+        .formulario-datos{
+            width: 75%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .formulario label{
+            color: #66738b;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: ;
+        }
+
+        .formulario input{
+            color: #254070;
+            font-size: 15px;
+            font-weight: bold;
+            border-style: none;
+            height: 70%;
+            padding-top: -50px;
+        }
+
+        .logosPharma{
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            padding-left: 05%;
+            padding-bottom: 50px;
+            padding-top: 30px;
+        }
+
+        .logosPharma img{
+            width: 100%;
+        }
+
+        .S01-text03 p{
+            color: #254070;
+            font-size: 15px;
+            font-weight: bold;
+            align-items: center;
+            position:absolute;
+            top: 450px;
+            left: 150px;
+        }
+
+        .Contenedor-main-box{
+            display: flex;
+            justify-content: space-between;
+            position:absolute;
+            height: 300px;
+            width: 80%;
+            top: 1200px; left: 10%;
+            padding-top: 30px;
+            
+        }
+
+        .boxes{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            border-color: #e2eaf8;
+            border-style:solid;
+            border-radius: .2rem;
+            padding: 20px;
+        }
+
+        .square{
+            width: 50px;
+            height: 50px;
+            background-color: #f1f5ff;
+            border-radius: .2rem;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .square img{
+            position: relative;
+            top: 3px;
+            left: 3px;
+        }
+
+        .boxes h3, .boxesS04 h3{
+            padding-top: 15px;
+            line-height:20px;
+            font-size: 16px;
+        }
+
+        .boxes p {
+            padding-top: 15px;
+            line-height:20px;
+            font-size: 13px;
+        }
+
+        .S03-Boxes-Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 600px;
+            padding-top: 53px;
+            padding-left: 20px;
+            padding-right: 55px;
+        }
+
+        .s03-items{
+            display: flex;
+            flex-wrap: wrap;
+            border-color: rgba(226, 234, 248,0.2);
+            border-style: solid;
+            border-radius: .2rem;
+            padding: 15px;
+        }
+        .s03-items img{
+            height: 20px;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+        
+        .s03-items p{
+            color: #254070;
+            font-size: 15px;
+            font-weight: bold;
+            padding-left: 15px;
+            width: 90%;
+        }
+
+
+        .s03-items h5 {
+            color: #66738b;
+            font-size: 12px;
+            padding-top: 05px;
+            padding-left: 35px;
+        }
+
+        .S04-Boxes-Container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 450px;
+            width: 450px; 
+        }
+
+        .boxesS04{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 180px;
+            height: 180px;
+            background-color: white;
+            border-color: rgba(226, 234, 248,0.4);
+            border-style:solid;
+            border-radius: .2rem;
+            padding: 20px;
+            position: relative;
+        }
+
+        .square-S04{
+            width: 50px;
+            height: 50px;
+            background-color: #f1f5ff;
+            border-radius: .2rem;
+            margin-left: 00px;
+            margin-top: 10px;
+        }
+
+        .texto-S04{
+            display: flex;
+            flex-direction: column;
+            width: 120px;
+            height: 50px;
+            position: relative;
+            top: -60px;
+            left: 55px;
+        }
+
+        .botonS04{
+            height: 45px;
+            width: 150px;
+            background-color: #f1f5ff;       
+            position:absolute;
+            left: 07%;
+            top: 100px;
+            color: #2d76db;
+            border-radius: .2rem;
+            border-style: none;
+            font-weight: bold;
+        }
+
+        .boton-azul{
+            background-color: #2d76db;
+            color: #f1f5ff;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->    
+    <header class="main-header">
+        <div class="brand-logo">Vaccination</div>
+        <!-- Menú de Navegación -->
+        <nav class="main-nav"> 
+            <ul>
+                <li><a href="database.html">Database</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="regultion.html">Regulation</a></li>
+            </ul>
+        </nav>
+        <!-- Menú de Navegación - Boton -->
+        <button class="button"><a href="hoaxbuster.html"></a>Hoax Buster</button>
+    </header>
+
+    <!-- Sección 01 -->  
+    <section class="home-section1">
+        <div class="Contenedor-Izquierda">
+            <div class="S01-text01">
+                <h1 class="title">Fight Virus With Vaccines</h1>
+                <p class="main-text">Let's stop this pandemic by killing the virus with a vaccione, don't let yourself and your family get infected</p>
+            </div>
+
+            <div class="S01-text02">
+                <img src="./images/start.svg" alt="start-icon">
+                <p>Best protection</p>
+                <img src="./images/start.svg" alt="start-icon">
+                <p>Selected vacciones</p>
+            </div>
+
+            <div class="S01-text03">
+                <p>Schedule your vaccionations</p>
+            </div>
+
+            <div class="formulario"> 
+                <div class="formulario-datos">            
+                    <label for="Location">Location</label>
+                    <input type="text" name="location" id="location" value="Jakarta Utara">
+                    <label for="Date">Date</label>
+                    <input type="date" name="Date" id="Date" value= "08/07/2021">
+                    <label for="Vaccine Type">Vaccine Type</label>
+                    <input type="text" name="Vaccine Type" id="Vaccine Type" value="Moderna">
+                </div>  
+
+                <button class="button"><a href="#"></a>Submit</button>
+            </div>
+
+        </div>
+
+        <!-- Imagen Seccion 01 --> 
+        <div class="Contenedor-Derecha">
+        <img src="./images/Imagen2.png" alt="imagen1">
+        </div>
+
+
+    </section>
+
+     <!-- Imagen Logos --> 
+    <div class="logosPharma"><img src="./images/logos.PNG" alt="logos"></div>
+
+    
+    <!-- Sección 02 -->  
+    <section class="home-section2">
+        
+        <div class="Contenedor-Izquierda">
+            <div class="S02-textoIzquierda"> <!-- S2 texto Izquierda -->  
+                <h2 class="subtitle">Why Should I Vaccinate?</h2>
+                <p class="main-text">In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
+            </div> 
+        </div> 
+        
+        <div class="Contenedor-main-box">
+
+            <div class="boxes"> <!-- box 01 -->  
+                <div class="square"><img src="./images/shield.svg" alt="shieldicon"></div>
+                <h3>Minimize the spread of the viruses</h3>
+                <p>Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+                
+            </div>
+
+            <div class="boxes"> <!-- box 02 -->  
+                <div class="square"><img src="./images/shield.svg" alt="shieldicon"></div>
+                <h3>Forming antibodies</h3>
+                <p>COVID-19 vaccine proven to help shape antibody response for immune system</p>
+            </div>
+
+            <div class="boxes"> <!-- box 03 -->  
+                <div class="square"><img src="./images/users.svg" alt="shieldicon"></div>
+                <h3>Protecting people nearby</h3>
+                <p>The benefits of COVID-19 vaccination are the vaccine that we get can also help protec people around us</p>
+            </div>
+
+            <div class="boxes"> <!-- box 04 -->  
+                <div class="square"><img src="./images/shield.svg" alt="shieldicon"></div>
+                <h3>Creating group immunity</h3>
+                <p>COVID-19 vaccination is also beneficial for creating group immunity or herd immunity.</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Sección 03 -->  
+    <section class="home-section3">
+
+        <!-- S03 - Imagen -->  
+        <div class="Imagen-Izquierda"></div>
+        <img src="./images/Captura2.png" alt="imagen1" height="700px">
+        </div>
+
+        <!-- S03 - Texto -->  
+        <div class="Contenedor-Derecha">
+            <div class="S03-textoDerecha">
+                <h2 class="subtitle">Why Should I Vaccinate?</h2>
+                <p class="main-text">Let's stop this pandemic by killing the virus with a vaccione, don't let yourself and your family get infected</p>
+            </div> 
+
+            <!-- S03 - Contenedor -->  
+            <div class="S03-Boxes-Container">
+
+                <!-- ITEMS 01 -->
+                <div class="s03-items">
+                    <!-- item icon --> 
+                    <img src="./images/shield-x.svg" alt="shield-x icon">
+                    <!-- item text --> 
+                    <p>Avoid alcoholic beverages </p>
+                </div>
+
+                <!-- ITEMS 02 -->
+                <div class="s03-items">
+                    <!-- item icon --> 
+                    <img src="./images/shield-x.svg" alt="shield-x icon">
+                    <!-- item text --> 
+                    <p>Avoid stress</p>
+                    <h5>Stress has a profund effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</h5>
+                </div>
+
+                <!-- ITEMS 03 -->
+                <div class="s03-items">
+                    <!-- item icon --> 
+                    <img src="./images/shield-x.svg" alt="shield-x icon">
+                    <!-- item text --> 
+                    <p>Eat healthy food</p>
+                </div> 
+
+                <!-- ITEMS 04 -->
+                <div class="s03-items">
+                    <!-- item icon --> 
+                    <img src="./images/shield-x.svg" alt="shield-x icon">
+                    <!-- item text --> 
+                    <p>Get enough sleep</p>
+                </div>  
+
+                <!-- ITEMS 05 -->
+                <div class="s03-items">
+                    <!-- item icon --> 
+                    <img src="./images/shield-x.svg" alt="shield-x icon">
+                    <!-- item text --> 
+                    <p>Exercise or physical activity</p>
+                </div>             
+
+            </div>
+        </div> 
+
+        
+
+
+    </section>
+
+    <!-- Sección 04 -->  
+    <section class="home-section4">
+        <div class="Contenedor-Izquierda">
+            <div class="S02-textoIzquierda">
+                <h2 class="subtitle">Emergency Contact</h2>
+                <p class="main-text">Contact one of the contacs below if you or your family feel unwell and have similar symptoms such as Covid-19, make sure you also take care of yourself before reporting us:</p>
+            </div>
+
+            <div class="S04-Boxes-Container">
+                <div class="boxesS04"><!-- S04 - Box 1-->  
+                    <div class="square-S04"><img src="./images/phone.svg" alt="shieldicon"></div>
+                    <div class="texto-S04">
+                        <h3>Call</h3>
+                        <p>021.123.145.14</p>
+                    </div>
+                    <button class="botonS04">Call Now</button>
+                </div>
+
+                <div class="boxesS04"><!-- S04 - Box 2-->  
+                    <div class="square-S04"><img src="./images/chat.svg" alt="shieldicon"></div>
+                    <div class="texto-S04">
+                        <h3>Chat</h3>
+                        <p>021.123.145.14</p>
+                    </div>
+                    <button class="botonS04 boton-azul">Chat Now</button>
+                </div>
+
+                <div class="boxesS04"><!-- S04 - Box 3-->  
+                    <div class="square-S04"><img src="./images/video.svg" alt="shieldicon"></div>
+                    <div class="texto-S04">
+                        <h3>Video Call</h3>
+                        <p>021.123.145.14</p>
+                    </div>
+                    <button class="botonS04">Video Call Now</button>
+                </div>
+
+                <div class="boxesS04"><!-- S04 - Box 4-->  
+                    <div class="square-S04"><img src="./images/mail.svg" alt="shieldicon"></div>
+                    <div class="texto-S04">
+                        <h3>Message</h3>
+                        <p>021.123.145.14</p>
+                    </div>
+                    <button class="botonS04">Message Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Imagen Seccion 04 --> 
+        <div class="Contenedor-Derecha">
+            <img src="./images/Captura3.png" alt="imagen1" height="700px">
+        </div>
+        
+    </section>
+
+</body>
+
+<!-- FOOTER --> 
+<footer>
+    <div class="footer-container">
+        <!-- Main Logo div --> 
+        <div class="footer-col-logo">
+            <div class="brand-logo">Vaccination</div>
+            <p class="footer-text">Our goal is to help the world free from the ongoing pandemic</p>
+        </div>
+
+        <!-- About --> 
+        <div class="footer-cols">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">News & Blog</a></li>
+            </ul>
+        </div>
+        <!-- Company --> 
+        <div class="footer-cols">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">How We Work?</a></li>
+                <li><a href="#">Capital</a></li>
+                <li><a href="#">Security</a></li>
+            </ul>
+        </div>
+        <!-- Support --> 
+        <div class="footer-cols">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Trademark--> 
+
+    </div>
+
+    <div class="footer-trademark">
+        <p class="footer-text">@2021 Vaccination. All rights reserved</p>
+        <div class="footer-terms">
+            <p class="footer-text" a href="#">Terms & Agreements</a>
+            <p class="footer-text" a href="#">Privacy Policy</a>
+        </div>      
+    </div>
+
+</footer>
+</html>
