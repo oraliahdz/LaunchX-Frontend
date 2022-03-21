@@ -1,0 +1,347 @@
+
+
+/* Importing  font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+.main-section{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #1759aa;
+    color: #f7c505;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.centrar{
+    position: relative;
+    display: block;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #ec4e64;
+}
+
+p{
+    font-family:"Poppins";
+}
+.contenedorPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.Pokedex-Left{
+    background-color: #db2039;
+    width: 50%;
+    height: 100%;
+    border-right: 10px black;
+    border-style: solid;
+    border-radius: .8rem 0 0 .8rem;
+    position: relative;
+}
+
+
+
+.L-top{
+    display: flex;
+    justify-content: space-around;
+    height: 55px;
+    width: 155px;
+    padding-top: 07px;
+    background-color: rgba(83, 9, 19,.20);
+    border-radius: 7%
+}
+
+
+
+.circulo1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:#21faf9;
+    margin-left: 10px;
+    border-width: 06px;
+    border-color: rgb(218, 213, 213);
+    border-style: solid;
+}
+
+.circulo2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #db2039;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+.circulo3{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fecb32;
+    border-width: 2px;
+    border-color:black;
+    border-style: solid;
+}
+
+.circulo4{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #37f82b;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+.pantalla{
+    position: relative;
+    display: inline;
+}
+
+
+.L-pantalla-Pkdx{
+    width: 200px;
+    height: 200px;
+    background-color: #f1f2d3;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-width:20px;border-style:solid;
+    border-color:#dedede;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1); 
+
+}
+
+.L-pantalla-Pkdx img{
+    width: 200px;
+    height: 200px;
+    contain: content;
+} 
+
+.L-busquedaPokemon{
+    display:flex;
+    margin-left: 35px;
+    padding-left: 20px;
+    height: 38px;
+
+}
+
+.L-busquedaPokemon input{
+    background-color: #fecb32;
+    font-weight: bold;
+    padding: 05px;
+
+}
+
+
+.L-busquedaPokemon button{
+    background-color: #21faf9;
+    width: 75px;
+    flex-wrap: wrap;
+    border-radius: 0.3rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.L-Stats{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 300px;
+    position: absolute;
+    top: 333px;
+    left: 43px;
+}
+
+.L-Stats-screen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.L-Stats-screen input{
+    width: 48%;
+    border-radius: 1.5rem;
+    padding-left: 08px;  
+    background-color: #f1f2d3;  
+    margin-top: 05px;
+    height:25px
+}
+
+.Pokedex-Right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.Right-base{
+    background-color: #db2039;
+    position: relative;
+    width: 93%;
+    height: 395px;
+    border-left: 10px black;
+    border-style: solid;
+    border-top: 0px;
+    border-radius: 0 .8rem .8rem 0;
+}
+
+.Right-rectangulo{
+    background-color: #db2039;
+    position: relative;
+    width: 250px;
+    height: 65px;
+    margin-top: 40px;
+    border-left: 10px black;
+    border-style: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.Right-triangulo{
+    width: 0;
+    height: 0;
+    border-bottom: 66px solid #db2039;
+    border-right: 65px solid transparent;
+    position: absolute;
+    top: 0; left: 250px;
+    border-radius: 0,50;
+    margin-top: 40px;
+} 
+
+.R-pantalla-Pkdx{
+    width: 220px;
+    height: 200px;
+    background-color: #14a9f4;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+    margin-top: 05px;
+    border-width:07px;border-style:solid;
+    border-color: #dedede;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    top: 60px;
+    left: 45px;
+
+}
+
+
+
+.R-pantalla-Pkdx-texto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 60px;
+
+}
+
+.R-pantalla-Pkdx-texto input{
+    color: whitesmoke;
+    font-size: 16px;
+    background-color:#14a9f4;
+    border-width: 0;
+    margin-top: 3px;
+    font-weight: bolder;
+    border-color: #ec4e64;
+}
+
+.R-teclado{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 88px;
+    width: 220px;
+    top: 280px;
+    left: 45px;
+    background-color: #135fb1;
+    border-radius: 0.2rem;
+    object-fit: contain;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.tecla-azul{
+    height: 42px;
+    width: 42px;
+    background-color: #31a7f1;
+    position: relative;
+    border-radius: 0.2rem;
+}
+
+.R-OtherPokemons{
+    position:absolute;
+    top: 390px;
+    left: 45px;
+}
+
+.R-OtherPokemons button{
+    background-color: #3afa21;
+    width: 100px;
+    border-radius: 0.3rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.R-OtherPokemons input{
+    background-color: #fecb32;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 05px;
+    text-align: center;
+    border-radius: .8rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width:700px) {
+    .main-section{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contenedorPrincipal{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 500px;
+        padding-left: 15px;
+    }
+
+    .Pokedex-Right{
+        position: relative;
+        width: 51%;
+    }
+
+}

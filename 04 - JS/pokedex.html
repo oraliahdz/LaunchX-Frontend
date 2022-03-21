@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+
+<!-- Reset Formularios -->
+<body onload="clearInputs()"> 
+
+
+    <section class="main-section">
+        <header class="main-header">
+            <h1 class="centrar">Pokedex LaunchX</h1>
+        </header>
+    
+        <div class="contenedorPrincipal">
+            <!--beg Left -->
+            <div class="Pokedex-Left">
+
+                <!-- Circulos de decoracion izquierda -->
+                <section class="L-top">
+                    <div class="circulo1"></div>
+                    <div class="circulo2"></div>
+                    <div class="circulo3"></div>
+                    <div class="circulo4"></div>
+                </section>              
+                <!-- Pantalla del Pokedex -->
+                <section class="pantalla">
+                    <div class="L-pantalla-Pkdx">
+                        <img class="centrar" src="./images/Pokeball.svg" alt="Pokemon" id="pokeImg" width="150px">
+                    </div>   
+                </section>
+                <!-- Sección de búsqueda de Pokemon -->
+                <div class="L-busquedaPokemon">
+                    <input type="text" placeholder="Nombre del Pokemon" id="pokeName" name="pokeName"> 
+                    <button onclick="fetchPokemon()" id="botonGO">Mostrar Pokemon</button>
+                </div>
+
+                <section class="L-Stats">
+                    <div class="L-Stats-screen">
+                        <input type="text" name="stat1" id="stat1">
+                        <input type="text" name="stat2" id="stat2">
+                        <input type="text" name="stat3" id="stat3">
+                        <input type="text" name="stat4" id="stat4">
+                        <input type="text" name="stat5" id="stat5">
+                        <input type="text" name="stat6" id="stat6">
+                    </div>
+                </section>
+            </div> <!--fin Left -->
+
+            <!--beg Right -->
+            <section class="Pokedex-Right">
+                <section class="R-Base">
+                    <div class="Right-rectangulo"></div>
+                    <div class="Right-triangulo"></div>
+                    <div class="Right-base"></div>  
+                </section> 
+                
+
+                <!-- Pantalla datos de Pokemon - Izquierda -->
+                <section class="R-pantalla">
+                    <div class="R-pantalla-Pkdx"></div>
+
+                    <section class="R-pantalla-Pkdx-texto">
+                    <input type="text" name="idPokemon" id="idPokemon" value="">
+                    <input type="text" name="tipoPokemon" id="tipoPokemon" value="">
+                    <input type="text" name="pesoPokemon" id="pesoPokemon" value="">
+                    <input type="text" name="alturaPokemon" id="alturaPokemon" value="">
+                    <input type="text" name="movimientosPokemon1" id="movimientosPokemon1">
+                    <input type="text" name="movimientosPokemon2" id="movimientosPokemon2">
+                    </section>
+                </section>
+
+                <!-- decoración teclado azul -->
+                <section class="R-teclado">
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                    <div class="tecla-azul"></div>
+                </section>
+
+                <!-- Seccion de Previo y Next Pokemon -->
+                <section class="R-OtherPokemons">
+
+                    <div class="R-OtherPokemons-botones">
+                        <button onclick="fetchPrev()">Mostrar Anterior</button>
+                        <button onclick="fetchNext()">Mostrar Siguiente</button>
+                    </div>
+
+                    <div class="R-OtherPokemons-nombres">
+                        <input type="text" name="PrevPokemon" id="PrevPokemon" value="">
+                        <input type="text" name="nextPokemon" id="nextPokemon" value="">
+                    </div>
+
+                </section>
+
+            </section>  <!--fin Right -->
+
+       </div>
+
+    </section >  
+
+</body>
+
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
