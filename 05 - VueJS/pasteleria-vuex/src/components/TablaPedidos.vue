@@ -24,6 +24,7 @@
                     <th>"Recuperate Pronto"</th>
                     <th>Mango, 1</th>
                 </tr>
+                <!-- For each item in PedidosHistorial, show attibute on table -->
                 <tr v-for="item in $store.getters.getPedidos"  :key="item">  
                     <th>{{item.nombre}}</th> 
                     <th>{{item.telCliente}}</th>   

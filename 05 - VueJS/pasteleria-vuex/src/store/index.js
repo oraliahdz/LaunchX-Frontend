@@ -89,7 +89,9 @@ export default createStore({
     },
 
     finalizarPedido(state){
-      state.orden.pasteles=[]
+      state.orden.pasteles=[]  //Empty to avoid overlap of orders
+
+      //For each in pedidoPastel, if Quantity >0, do:
       for (let itemQ of Object.entries(state.pedidoPastel)){
         if(itemQ[1]>0){
           // Add pasteles to Orden (foreach)
@@ -105,8 +107,6 @@ export default createStore({
         pasteles: state.orden.pasteles,
         total: state.orden.total
       })
-
-
       //mensaje de pedido terminado
       alert("pedido terminado")
     },

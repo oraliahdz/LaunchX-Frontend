@@ -66,6 +66,7 @@
           <input type="number" v-model="$store.state.inventarioPastel.redVelvet">
 
           <div class="botonAdd">
+                                            <!-- method   , parámetro del método -->
               <button @click="$store.commit('addtoPedido','redVelvet')">Añadir</button>
           </div>
         </div>
