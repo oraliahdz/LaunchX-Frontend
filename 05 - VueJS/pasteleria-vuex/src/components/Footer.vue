@@ -10,9 +10,9 @@
 
         <div class="privacidad">
             <ul>
-                <li><a href="#">Aviso de Privacidad</a></li>
-                <li><a href="#">Canelaciones y Devoluciones</a></li>
-                <li><a href="#">Terminos de Servicio</a></li>
+                <li><a href="#">Aviso de Privacidad.</a></li>
+                <li><a href="#">Canelaciones y Devoluciones.</a></li>
+                <li><a href="#">Terminos de Servicio.</a></li>
             </ul>           
         </div>
         

@@ -45,9 +45,7 @@ export default {
   }
 
   .tablaPedidos table{
-    border-collapse: collapse;
-    border: 3px solid purple;
-    
+    border-collapse: collapse;    
   }
 
   .tablaPedidos th{

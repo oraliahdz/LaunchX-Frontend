@@ -134,6 +134,11 @@ export default {
     border-style: solid;
   }
 
+  .menuPasteles .pasteles img{
+    width: 30px;
+  }
+
+
   .menuPasteles .pasteles .botonAdd button{
     background-color: #da68a3;
     color: white;
