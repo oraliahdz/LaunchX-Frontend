@@ -3,7 +3,7 @@
 ## Objetivo: 
 Crear en JavaScript de un Pokedex usando los datos de la PokeApi   
 
-## Deploy:
+## Despliegue de la página
 [Pagina Pokedex](https://oraliahdz.github.io/LaunchX-Frontend/04%20-%20JS/index.html)
 
 ## Capturas:
