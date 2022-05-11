@@ -45,11 +45,65 @@ export default {
   }
 
   .tablaPedidos table{
-    border-collapse: collapse;    
+    border-collapse: collapse; 
+    margin: 0 auto;  
+    table-layout: fixed; 
+  }
+
+  thead{
+    background-color: #eabaf6;
   }
 
   .tablaPedidos th{
-    border: 3px solid purple; 
+    border: 2px solid purple; 
+    
+  }
+
+
+  /* Responsive Design */
+  @media screen and (max-width:800px){
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	  }
+
+    /* Esconder encabezados  thead*/
+    thead{
+      position: absolute;
+		  top: -9999px;
+		  left: -9999px;
+    }
+
+    
+
+    th {
+      position: relative;
+      width: 350px;
+      padding-left: 50%;
+      text-align: left; 
+      font-weight: 400;
+      
+    }
+
+    /* Datalbels como encabezados */
+    th:before{
+      content: attr(data-label);
+      display: inline-block;
+      width: 80%;
+      text-align: left;
+      margin-left: -102%;
+      white-space: nowrap;
+      line-height: 1.5;
+      background-color: #eabaf6;
+      padding-left: 05px;
+      margin-right: 05px;
+    }
+
+    /* gap entre pedidos */
+    tr + tr{
+        margin-top: 1.5em;
+    }
+
+
   }
 
   

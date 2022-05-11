@@ -1,5 +1,7 @@
 <template>
     <div class="inventarios">
+
+        <h2>Inventario disponible</h2>
         
         <div class="disponible">
             <!-- Sabores -->
