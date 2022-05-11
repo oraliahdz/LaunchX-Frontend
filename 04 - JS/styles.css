@@ -327,22 +327,34 @@ p{
 
 /* Responsive Design */
 @media screen and (max-width:700px) {
+
+    .main-header{
+        width:100%
+    }
     .main-section{
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 15px;
     }
 
     .contenedorPrincipal{
         display: flex;
         flex-wrap: wrap;
         min-width: 500px;
-        padding-left: 15px;
+        padding-left: 15px;       
     }
 
     .Pokedex-Right{
         position: relative;
         width: 51%;
+        
     }
+
+    .R-pantalla{
+        padding-bottom: 20px;
+    }
+
+    
 
 }
